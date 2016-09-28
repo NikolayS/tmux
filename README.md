@@ -20,4 +20,13 @@ Usage
 ---
 Main key: **Ctrl-A**
 
+Start new session: 
+```bash
+tmux
+```
+
+Attach to the existing session:
+```bash
+tmux attach
+```
 Cheatsheet: https://gist.github.com/MohamedAlaa/2961058
