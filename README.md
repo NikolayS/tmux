@@ -2,9 +2,9 @@ tmux configuration files. Compiled from various sources.
 
 Quick Installation
 ---
-The first line install tmux + this stuff from this repo, the second one installs `.vimrc` from https://github.com/NikolayS/vimrc (and Ubuntu, it also tries to update to vim 8.0 with clientserver support). It also install mosh (use `mosh username@servername` instead of `ssh username@servername`).
+The first line installs tmux and all the stuff from this repo, the second one installs `.vimrc` from https://github.com/NikolayS/vimrc (and on Ubuntu, it also tries to update vim to 8.0 version, with clientserver support). It also install mosh (use `mosh username@servername` instead of `ssh username@servername`).
 
-Running it requires root privileges (sudo).
+Running this requires root privileges (sudo).
 
 ```
 curl https://raw.githubusercontent.com/NikolayS/tmux/master/quickinstall.sh | bash
