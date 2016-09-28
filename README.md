@@ -11,7 +11,7 @@ curl https://raw.githubusercontent.com/NikolayS/tmux/master/quickinstall.sh | ba
 curl https://raw.githubusercontent.com/NikolayS/vimrc/master/quickinstall_awesome.sh | bash
 ```
 
-If you love using clientserver support in vim, use this on Ubuntu/Debian:
+If you want to use clientserver support in vim, use this on Ubuntu/Debian:
 ```bash
 sudo apt install vim-gnome
 ```
