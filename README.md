@@ -18,5 +18,6 @@ sudo apt install vim-gnome
 
 Usage
 ---
-Main key: Ctrl-A
+Main key: **Ctrl-A**
+
 Cheatsheet: https://gist.github.com/MohamedAlaa/2961058
