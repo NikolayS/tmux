@@ -29,10 +29,10 @@ Cheatsheet: https://gist.github.com/MohamedAlaa/2961058
 For PostgreSQL Users
 ---
 If you use psql a lot, consider using clientserver support in vim.
-The following installs it on Ubuntu and tells all new psql sessions to use it:
+The following installs it on Ubuntu and tells all new psql sessions to use it (if you run :
 ```bash
 sudo apt install -y vim-gnome
-echo "EDITOR='vim --servername PSQL --remote-send \"<Esc>:tabnew<CR>gt\"" >> ~/.bashrc
+echo "export EDITOR='vim --servername PSQL --remote-send \"<Esc>:tabnew<CR>gt\"'" >> ~/.bashrc && bash
 ```
 Run vim in server mode (in separate tmux tab/pane):
 ```bash
