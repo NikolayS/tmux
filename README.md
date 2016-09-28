@@ -32,8 +32,7 @@ If you use psql a lot, consider using clientserver support in vim.
 The following installs it on Ubuntu and tells all new psql sessions to use it (if you run :
 ```bash
 sudo apt install -y vim-gnome
-echo "export EDITOR='vim --servername PSQL --remote-send \"<Esc>:tabnew<CR>gt\" --remote-tab-wait ''"\
-  >> ~/.bashrc && bash
+echo "export EDITOR='vim --servername PSQL --remote-send \"<Esc>:tabnew<CR>gt\" --remote-tab-wait ''" >> ~/.bashrc && bash
 ```
 Run vim in server mode (in separate tmux tab/pane):
 ```bash
