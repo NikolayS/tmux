@@ -11,11 +11,6 @@ curl https://raw.githubusercontent.com/NikolayS/tmux/master/quickinstall.sh | ba
 curl https://raw.githubusercontent.com/NikolayS/vimrc/master/quickinstall_awesome.sh | bash
 ```
 
-If you want to use clientserver support in vim, use this on Ubuntu/Debian:
-```bash
-sudo apt install vim-gnome
-```
-
 Usage
 ---
 Main key: **Ctrl-A**
@@ -30,3 +25,19 @@ Attach to the existing session:
 tmux attach
 ```
 Cheatsheet: https://gist.github.com/MohamedAlaa/2961058
+
+For PostgreSQL Users
+---
+If you use psql a lot, consider using clientserver support in vim.
+The following installs it on Ubuntu and tells all new psql sessions to use it:
+```bash
+sudo apt install vim-gnome
+echo "EDITOR='vim --servername PSQL --remote-send \"<Esc>:tabnew<CR>gt\"" >> ~/.bashrc
+```
+Run vim in server mode (in separate tmux tab/pane):
+```bash
+vim --servername PSQL
+```
+Now `\e` and `\ef` will use that separate vim session for editing texts.
+
+Enjoy.
