@@ -1,4 +1,4 @@
-apt-get -v &> /dev/null && sudo apt update && sudo apt install -y tmux && sudo apt install mosh
+apt-get -v &> /dev/null && sudo apt update && sudo apt install -y tmux && sudo apt install -y mosh
 which yum &> /dev/null && yum update && yum install tmux && sudo yum install mosh
 which brew &> /dev/null && brew install tmux && brew install mosh
 
