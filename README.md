@@ -20,18 +20,18 @@ Start new session:
 tmux
 ```
 
-Attach to the existing session:
+Attach to the existing session (detaching other clients – remove `-d` if you work with remote buddies):
 ```bash
-tmux attach
+tmux attach -d
 ```
 Cheatsheet: https://gist.github.com/MohamedAlaa/2961058
 
 For PostgreSQL Users
 ---
 If you use psql a lot, consider using clientserver support in vim.
-The following installs it on Ubuntu and tells all new psql sessions to use it (if you run :
+The following installs it on Ubuntu and tells all new psql sessions to use it:
 ```bash
-sudo apt install -y vim-gnome
+sudo apt install -y vim-gnome # Ubuntu/Debian version
 echo "export EDITOR='vim --servername PSQL --remote-send \"<Esc>:tabnew<CR>gt\" --remote-tab-wait '" >> ~/.bashrc && . ~/.bashrc
 ```
 Run vim in server mode (in separate tmux tab/pane):
