@@ -20,7 +20,7 @@ Start new session:
 tmux
 ```
 
-Attach to the existing session (detaching other clients – remove `-d` if you work with remote buddies):
+Attach to the existing session (detaching other clients – remove `-d` if you work with remote teammates):
 ```bash
 tmux attach -d
 ```
