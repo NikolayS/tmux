@@ -7,8 +7,8 @@ The first line installs tmux and all the stuff from this repo, the second one in
 Running this requires root privileges (sudo).
 
 ```bash
-curl https://raw.githubusercontent.com/NikolayS/tmux/master/quickinstall.sh | bash
-curl https://raw.githubusercontent.com/NikolayS/vimrc/master/quickinstall_awesome.sh | bash
+curl https://gitlab.com/NikolayS/tmux/raw/master/quickinstall.sh | bash
+curl https://gitlab.com/NikolayS/vimrc/raw/master/quickinstall_awesome.sh | bash
 ```
 
 Usage
